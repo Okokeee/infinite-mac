@@ -212,7 +212,7 @@ export const POWER_MACINTOSH_G3_BEIGE: MachineDef = {
     gestaltID: 510,
     emulatorType: "DingusPPC",
     prefsPath: emptyPrefsPath,
-    bezelStyle: "Platinum",
+    bezelStyle: "Beige",
     supportedScreenSizes: [
         {width: 1152, height: 870, monitorId: "MacColor21in"},
         {width: 1024, height: 768, monitorId: "Multiscan17in"},
