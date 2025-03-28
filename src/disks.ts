@@ -94,14 +94,11 @@ function isSystemDiskDef(
 
 const SYSTEM_1_0: SystemDiskDef = {
     displayName: "System 1.0",
-    description: "Initial system software release, shipped with the Mac 128K.",
+    description: "Initial system software release, shipped with the Mac SE.",
     releaseDate: [1984, 1, 24],
     prefetchChunks: [0, 1],
-    preferredMachine: MAC_128K,
+    preferredMachine: MAC_SE,
     infiniteHdSubset: "mfs",
-    // Loading the Infinite HD disk as part of the initial set of images does
-    // appear to work in System 1.0 under Mini vMac, but if we delay it until
-    // after the system is booted, it appears to work.
     delayAdditionalDiskMount: true,
     generatedSpec: () => import("./Data/System 1.0.dsk.json"),
     notable: true,
@@ -109,10 +106,10 @@ const SYSTEM_1_0: SystemDiskDef = {
 
 const SYSTEM_1_0_ORIGINAL: SystemDiskDef = {
     displayName: "System 1.0 (System Disk)",
-    description: "Initial system software release, shipped with the Mac 128K.",
+    description: "Initial system software release, shipped with the Mac SE.",
     releaseDate: [1984, 1, 24],
     prefetchChunks: [0, 1],
-    preferredMachine: MAC_128K,
+    preferredMachine: MAC_SE,
     infiniteHdSubset: "mfs",
     delayAdditionalDiskMount: true,
     generatedSpec: () => import("./Data/System 1.0 (Original).dsk.json"),
@@ -125,7 +122,7 @@ const SYSTEM_1_1: SystemDiskDef = {
         "Maintenance release that improved disk copying speeds and added the “Set Startup” command and the Finder about box.",
     releaseDate: [1984, 5, 5],
     prefetchChunks: [0, 1],
-    preferredMachine: MAC_128K,
+    preferredMachine: MAC_SE,
     infiniteHdSubset: "mfs",
     generatedSpec: () => import("./Data/System 1.1.dsk.json"),
 };
@@ -136,7 +133,7 @@ const SYSTEM_2_0: SystemDiskDef = {
         "Introduced the ”New Folder” and ”Shut Down” commands, the MiniFinder, and the Choose Printer DA. Also added icons to list view and the Command-Shift-3 screenshot FKEY.",
     releaseDate: [1985, 4, 8],
     prefetchChunks: [0, 1],
-    preferredMachine: MAC_128K,
+    preferredMachine: MAC_SE,
     infiniteHdSubset: "mfs",
     generatedSpec: () => import("./Data/System 2.0.dsk.json"),
     notable: true,
@@ -149,7 +146,7 @@ const SYSTEM_2_1: SystemDiskDef = {
     releaseDate: [1985, 9, 17],
     prefetchChunks: [0, 1, 2],
     // The Mac 128K is supported, but HFS is not loaded in that case.
-    preferredMachine: MAC_512KE,
+    preferredMachine: MAC_SE,
     infiniteHdSubset: "system6",
     generatedSpec: () => import("./Data/System 2.1.dsk.json"),
     notable: true,
@@ -161,7 +158,7 @@ const SYSTEM_3_0: SystemDiskDef = {
         "Added more complete support for HFS, a RAM disk cache, zoom boxes for windows and a redesigned control panel. Introduced with the Mac Plus.",
     releaseDate: [1986, 1, 16],
     prefetchChunks: [0, 1, 2],
-    preferredMachine: MAC_PLUS,
+    preferredMachine: MAC_SE,
     infiniteHdSubset: "system6",
     generatedSpec: () => import("./Data/System 3.0.dsk.json"),
     notable: true,
@@ -182,7 +179,7 @@ const SYSTEM_3_2: SystemDiskDef = {
         "Includes redesigned Calculator and Chooser desktop accessories.",
     releaseDate: [1986, 6, 2],
     prefetchChunks: [0, 1, 2],
-    preferredMachine: MAC_PLUS,
+    preferredMachine: MAC_SE,
     infiniteHdSubset: "system6",
     generatedSpec: () => import("./Data/System 3.2.dsk.json"),
 };
@@ -193,7 +190,7 @@ const SYSTEM_3_3: SystemDiskDef = {
         "Enhanced AppleShare file serving support. The Trash can icon now bulges when it's not empty.",
     releaseDate: [1987, 1, 12],
     prefetchChunks: [0, 1, 2],
-    preferredMachine: MAC_PLUS,
+    preferredMachine: MAC_SE,
     infiniteHdSubset: "system6",
     generatedSpec: () => import("./Data/System 3.3.dsk.json"),
 };
