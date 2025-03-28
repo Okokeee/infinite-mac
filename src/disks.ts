@@ -899,7 +899,6 @@ const MAC_OS_X_10_0_PUBLIC_BETA: SystemDiskDef = {
     description:
         "First public release of Mac OS X, allowing software developers and early adopters to test a preview of the upcoming next-generation operating system.",
     releaseDate: [2000, 9, 13],
-    customDate: new Date(2000, 8, 13), // Avoid time-bomb
     prefetchChunks: [
         0, 2, 3, 4, 17, 18, 19, 20, 21, 22, 24, 28, 29, 45, 46, 800, 801, 802,
         803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816,
