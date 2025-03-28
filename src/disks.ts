@@ -1112,7 +1112,6 @@ const MAC_OS_X_10_2_8: SystemDiskDef = {
     extraMachineFiles: dppcExtraMachineFiles,
     notable: true,
     infiniteHdSubset: "macosx",
-    isUnstable: true,
     hasDeviceImageHeader: true,
 };
 
