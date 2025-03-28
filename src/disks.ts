@@ -374,6 +374,7 @@ const SYSTEM_7_1_1: SystemDiskDef = {
     preferredMachine: QUADRA_650,
     appleTalkSupported: true,
     appearanceVariant: "System7",
+    isUnstable: true,
     generatedSpec: () => import("./Data/System 7.1.1 HD.dsk.json"),
 };
 
