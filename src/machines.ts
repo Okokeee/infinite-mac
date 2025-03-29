@@ -117,7 +117,7 @@ export const MAC_II: MachineDef = {
     prefsPath: emptyPrefsPath,
     fixedScreenSize: {width: 640, height: 480},
     bezelStyle: "Pinstripes",
-    ramSizes: ["4M"],
+    ramSizes: ["8M"],
 };
 
 export const MAC_IIFX: MachineDef = {
