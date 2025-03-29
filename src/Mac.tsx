@@ -283,7 +283,7 @@ export default function Mac({
                 emulatorDidRunOutOfMemory(emulator: Emulator) {
                     varz.increment("emulator_error:out_of_memory");
                     setEmulatorErrorText(
-                        "The emulator ran out of memory.\n\nIf you are running it in a mobile app's in-app browser, try switching to the native browser (Safari or Chrome) on your device."
+                        "emulator out of memory"
                     );
                 },
                 emulatorDidHaveError(
