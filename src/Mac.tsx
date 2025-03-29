@@ -617,7 +617,7 @@ export default function Mac({
 
     const controls: ScreenControl[] = [
         {
-            label: "‹ Home",
+            label: "‹ Done",
             handler: onDone,
             alwaysVisible: true,
         },
