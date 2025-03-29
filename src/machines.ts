@@ -270,7 +270,7 @@ export const POWER_MACINTOSH_G4_PEARPC: MachineDef = {
     gestaltID: 406,
     emulatorType: "PearPC",
     prefsPath: pearPCConfigPath,
-    bezelStyle: "Pinstripes",
+    bezelStyle: "Platinum",
     ramSizes: ["256M", "128M", "64M", "32M"],
     extraFiles: {
         "video.x": pearpcVideoXPath,
